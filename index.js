@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 const path = require('path') 
 
-const errorHandler = require('../_helpers/error-handler');
+const errorHandler = require('./_helpers/error-handler');
 
 require('dotenv').config({path: __dirname + '/.env'})
 
@@ -13,8 +13,8 @@ require('dotenv').config({path: __dirname + '/.env'})
   *  routes *
     *    here */
 
-const UserRoutes = require('../routes/user_routes');
-const PostRoutes = require('../routes/post_routes');
+const UserRoutes = require('./routes/user_routes');
+const PostRoutes = require('./routes/post_routes');
 
 
 

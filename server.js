@@ -45,10 +45,6 @@ app.use(errorHandler);
     *    here */
 //app.use('/', UserRoutes);
 
-app.get('/', (req, res) => {
-  res.send('API running ')
-})
-
 app.use('/api/v1/users/', UserRoutes);
 app.use('/api/v1/posts/', PostRoutes);
 

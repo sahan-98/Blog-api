@@ -7,7 +7,7 @@ const { createPost, getPost ,getPostDetailsbyID, searchBlogPosts, updatePost, de
 
 router.post('/', RequiredLogin, createPost);
 router.get('/',  getPost);
-router.get('/:id',RequiredLogin, getPostDetailsbyID);
+router.get('/:id', getPostDetailsbyID);
 router.get('/search/:key',[],RequiredLogin, searchBlogPosts);
 router.put('/update/:id',RequiredLogin, updatePost);
 router.delete('/delete/:id',RequiredLogin, deletePost);

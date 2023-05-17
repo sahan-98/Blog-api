@@ -13,9 +13,6 @@ require('dotenv').config({path: __dirname + '/.env'})
   *  routes *
     *    here */
 
-app.get('/', (req, res) => {
-  res.send('API running')
-})
 const UserRoutes = require('./routes/user_routes');
 const PostRoutes = require('./routes/post_routes');
 
@@ -47,6 +44,10 @@ app.use(errorHandler);
   *  routes *
     *    here */
 //app.use('/', UserRoutes);
+
+app.get('/', (req, res) => {
+  res.send('API running')
+})
 
 app.use('/api/v1/users/', UserRoutes);
 app.use('/api/v1/posts/', PostRoutes);

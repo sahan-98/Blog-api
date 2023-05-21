@@ -1,5 +1,5 @@
 npm i --force
-install packages in the both frontend and backend
+install packages in the backend
 
 npm start
 Runs the app in the development mode.

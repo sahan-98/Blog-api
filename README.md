@@ -7,8 +7,8 @@ Runs the app in the development mode.
 Login Details
 Users -->
 
-username: ruka99.com
+username: ruka99
 Password: 123456
 
-username: sachini99.com
+username: sachini99
 Password: 123456
